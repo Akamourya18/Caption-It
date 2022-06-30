@@ -23,7 +23,7 @@ from tensorflow.keras.layers import add
 # In[2]:
 
 
-model = load_model("D:\Image Captioning\model_weights\model_9.h5")
+model = load_model("D:\Caption It\model_weights\model_9.h5")
 
 
 # In[3]:
@@ -65,9 +65,9 @@ def encode_image(img):
 # In[24]:
 
 
-with open("D:\Image Captioning\storage\word_to_idx.pkl", "rb") as w2i:
+with open("D:\Caption It\storage\word_to_idx.pkl", "rb") as w2i:
     word_to_idx = pickle.load(w2i)
-with open("D:\Image Captioning\storage\idx_to_word.pkl", "rb") as i2w:
+with open("D:\Caption It\storage\idx_to_word.pkl", "rb") as i2w:
     idx_to_word = pickle.load(i2w)
 
 

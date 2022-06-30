@@ -16,7 +16,7 @@ def marks():
 	if request.method == 'POST':
 
 		f = request.files['userfile']
-		path = "D:\Image Captioning\static\{}".format(f.filename)# ./static/images.jpg
+		path = "D:\Caption It\static\{}".format(f.filename)# ./static/images.jpg
 		f.save(path)
 		img_path = "{}".format(f.filename)
 		caption = Caption_it.caption_this_image(path)
